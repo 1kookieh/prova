@@ -1,6 +1,8 @@
 package org.example.Pessoas;
 
-import org.example.Endereco;
+import org.example.Enums.Endereco;
+
+import java.util.Scanner;
 
 public class Supervisor extends Pessoa{
 
@@ -11,4 +13,20 @@ public class Supervisor extends Pessoa{
         this.dataNasc = dataNasc;
         this.endereco = endereco;
     }
+
+    public boolean AprovarPedido(){
+        if(Va)
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Deseja aprovar o pedido? (1/2)\n");
+        String resposta = scanner.nextLine();
+        if(resposta.equals("1")){
+            System.out.println("Pedido aprovado!\n");
+            return true;
+        } else if(resposta.equals("2")){
+            System.out.println("Pedido reprovado!\n");
+            return false;
+        }
+        return false;
+    }
+
 }
