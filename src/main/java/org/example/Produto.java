@@ -17,7 +17,7 @@ public class Produto {
         this.quantidadeEstoque += quantidade;
     }
 
-    public void reduzirEstoque(int quantidade) {
+    public void reduzirEstoque(Produto produto, int quantidade) {
         if (quantidade > this.quantidadeEstoque) {
             throw new IllegalArgumentException("Quantidade insuficiente em estoque");
         }

@@ -15,7 +15,6 @@ public class Supervisor extends Pessoa{
     }
 
     public boolean AprovarPedido(){
-        if(Va)
         Scanner scanner = new Scanner(System.in);
         System.out.println("Deseja aprovar o pedido? (1/2)\n");
         String resposta = scanner.nextLine();
